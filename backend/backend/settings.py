@@ -67,6 +67,10 @@ TEMPLATES = [
     },
 ]
 
+TEMPLATES[0]['DIRS'] = [BASE_DIR / 'templates']
+
+STATICFILES_DIRS = [BASE_DIR / 'static']
+
 WSGI_APPLICATION = 'backend.wsgi.application'
 
 
